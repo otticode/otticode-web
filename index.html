@@ -2,62 +2,138 @@
 <html lang="en" ng-app="otticode" ng-controller="AppCtrl">
 
 <head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Otticode</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Home</a>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/services">Services</a>
+                    </li>
+                    <!-- <li><a href="/hackers">Hackers</a></li> -->
+                    <li>
+                        <a class="page-scroll" href="/work">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/company">Company</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/blog">Blog</a>
+                    </li>
+                </ul>
+                <!-- <form class="navbar-form navbar-right" role="search">
+                    <input type="text" class="form-control" placeholder="Search">
+                </form> -->
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="collapse navbar-collapse" id="nav-toggle">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/services">Services</a></li>
-                <!-- <li><a href="/hackers">Hackers</a></li> -->
-                <li><a href="/work">Work</a></li>
-                <li><a href="/company">Company</a></li>
-                <li><a href="/blog">Blog</a></li>            
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <input type="text" class="form-control" placeholder="Search">
-            </form>
-        </div>
+        <!-- /.container -->
     </nav>
-    <div class="container">
-    	<div class="row">
-    		<div class="col-sm-8">
-    			This is our content area
-    			<button ng-click="clickHandler()">Click Me</button>	
 
-				<div class="row">
-            		<div class="col-sm-6">
-                		<p>Lorem ipsum dolor...</p>
-            		</div>
-            		<div class="col-sm-6">
-                		<p>Class aptent taciti...</p>
-            		</div>
-        		</div>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    		</div>
-    		<div class="col-sm-3 col-sm-offset-1">
-    			Here is our sidebar
-    		</div>
-    	</div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="assets/js/jquery-3.1.0.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/angular.min.js"></script>
-    <script type="text/javascript" src="assets/js/controller.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->	
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Angular -->
+    <script src="js/angular.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/controller.js"></script>
 
 </body>
 

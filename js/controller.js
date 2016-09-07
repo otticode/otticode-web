@@ -1,4 +1,6 @@
 angular.module('otticode', [])
     .controller('AppCtrl', function($scope) {
-         $scope.name = "";
+        $scope.clickHandler = function() {
+        	window.alert('Clicked!');
+        }
     });
