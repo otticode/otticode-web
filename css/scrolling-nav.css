@@ -50,8 +50,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .services-section {
-    /*height: 100%;*/
-    padding-top: 150px;
+<<<<<<< HEAD
+    height: 150%;
+    padding-top: 50px;
     padding-bottom: 150px;
     text-align: center;
     background: #eee;
@@ -66,9 +67,14 @@ of those sections to manage the look and feel of the site. */
 }
 
 .company-section {
+<<<<<<< HEAD
+    height: 100%;
+    padding-top: 100px;
+=======
     /*height: 100%;*/
     padding-top: 150px;
     padding-bottom: 150px;
+>>>>>>> 5ac5e219c94bc8acaf5553d32be70cd481c52886
     text-align: center;
     background: #eee;
 }
@@ -104,4 +110,8 @@ of those sections to manage the look and feel of the site. */
   width: 100%;
   height: 300px;
   margin-top: 10px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5ac5e219c94bc8acaf5553d32be70cd481c52886
