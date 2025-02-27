@@ -14,12 +14,10 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <!-- for windows mobile favicon -->
-    <!-- Bootstrap Core CSS -->
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-    <!-- Font Awesome (might this be better at the bottom?)-->
+    <link href="css/formspree.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/467c7e418f.js"></script>
 </head>
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -47,7 +45,6 @@
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
-                    <!-- <li><a href="#hackers">Hackers</a></li> -->
                     <li>
                         <a class="page-scroll" href="#work">Work</a>
                     </li>
@@ -58,9 +55,6 @@
                         <a class="page-scroll" href="#blog">Blog</a>
                     </li> -->
                 </ul>
-                <!-- <form class="navbar-form navbar-right" role="search">
-                    <input type="text" class="form-control" placeholder="Search">
-                </form> -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -76,12 +70,12 @@
                         <p>
                             <strong>Building the Future of Web & Enterprise Applications</strong>
                         </p>
-                        <p>
+                        <!-- <p>
                             At Otticode, we engineer powerful, scalable, and innovative 
                             software solutions. Whether it's a full-fledged web 
                             application, a custom NetSuite integration, or an enterprise-grade
                             system, our expertise ensures seamless execution.
-                        </p>
+                        </p> -->
                     </div>
                     <a class="btn btn-default page-scroll" href="#services">Click Me to Scroll Down!</a>
                 </div>
@@ -156,7 +150,7 @@
                 <!-- 1 -->
                 <div class="col-lg-12 text-center">
                     <h2>Work</h2>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-4 portfolio-item">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -167,7 +161,7 @@
                         </a>
                         <div class="portfolio-caption">
                             <h4>IoT Monitoring for Smart Buildings</h4>
-                            <p class="text-muted">
+                            <p class="text-justify text-muted">
                                 We built a web-based IoT monitoring platform that helps facility managers 
                                 track energy consumption, security systems, and environmental conditions in
                                 real time. Our solution integrates with various IoT sensors to provide 
@@ -175,7 +169,7 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-4 portfolio-item">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -186,14 +180,14 @@
                         </a>
                         <div class="portfolio-caption">
                             <h4>Customized NetSuite Reports & Forms</h4>
-                            <p class="text-muted">NetSuite is powerful, but it often requires tailored 
+                            <p class="text-justify text-muted">NetSuite is powerful, but it often requires tailored 
                                 configurations to fit unique business needs. We've helped multiple 
                                 clients optimize their reporting, enhance workflows, and customize 
                                 NetSuite forms to streamline their operations.</p>
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-4 portfolio-item">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -204,7 +198,7 @@
                         </a>
                         <div class="portfolio-caption">
                             <h4>Algorithmic Trading Bot (In Progress)</h4>
-                            <p class="text-muted">Currently, we are developing a high-frequency 
+                            <p class="text-justify text-muted">Currently, we are developing a high-frequency 
                                 trading bot that utilizes advanced algorithmic strategies. Designed 
                                 for financial markets, this solution automates trade execution, 
                                 monitors real-time data, and optimizes investment performance through 
@@ -265,7 +259,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Ready to Build with Us?</h2>
-                    <p class="text-justify text-muted">
+                    <p class="text-justify text-muted custom-paragraph">
                         Whether you need a custom web application, mobile solution, or NetSuite 
                         integration, Otticode is your partner in innovation. Let's bring your 
                         ideas to life.
@@ -284,10 +278,39 @@
                             <!-- <abbr title="Phone">P:</abbr> +00 34 616 65 12 02 00 -->
                         </address>
                     </div>
+
+                    <div class="row">
+                        <h3>Contact</h3>
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form action="https://formspree.io/f/moqzgkka" class="fs-form fs-margin-bottom" target="_top" method="POST">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="fs-field mb-2">
+                                    <label class="fs-label" for="name">Your Name</label>
+                                    <input class="fs-input" id="name" name="name" required />
+                                    <p class="fs-description"></p>
+                                </div>
+                                <div class="fs-field">
+                                    <label class="fs-label" for="email">Email</label>
+                                    <input class="fs-input" id="email" name="email" required />
+                                    <p class="fs-description">
+                                        This will help me respond to your query via an email.
+                                    </p>
+                                </div>
+                                <div class="fs-field">
+                                    <label class="fs-label" for="message">Message</label>
+                                    <textarea class="fs-textarea" id="message" name="message" required></textarea>
+                                    <p class="fs-description">What would you like to discuss?</p>
+                                </div>
+                                <div class="fs-button-group">
+                                    <button class="fs-button" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
                     <div class="col-lg-12">
                         <div class="row">
                             <!-- Map Section -->
-                            <div id="map"></div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6929753164054!2d2.1735506117397163!3d41.380754796286745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f875d070ad%3A0x80b8e683ab7abd34!2sCarrer%20de%20la%20Lleona%2C%204%2C%20Ciutat%20Vella%2C%2008002%20Barcelona!5e0!3m2!1sen!2ses!4v1740657249964!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -305,15 +328,13 @@
         </div>
     </section> -->
     <!-- jQuery -->
-    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- <script src="js/jquery-3.1.0.min.js"></script> -->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Angular -->
-    <script src="js/angular.min.js"></script>
+    <!-- <script src="js/angular.min.js"></script> -->
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-    <!-- Google Maps API Javascript-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-AXL4qUNSXcAZlctEiZHGtPTZnifYB4U&amp;sensor=false"></script>
     <script src="js/scrolling-nav.js"></script>
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/controller.js"></script>
