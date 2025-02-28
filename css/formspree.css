@@ -25,7 +25,7 @@
   box-sizing: border-box;
 }
 
-* {
+form * {
   border: 0;
   margin: 0;
   padding: 0;
@@ -102,15 +102,15 @@ fieldset {
   color: var(--color-text-default);
   display: block;
   font-family: var(--font-family-display);
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .fs-description {
   color: var(--color-text-muted);
   display: block;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .fs-button-group {
@@ -153,7 +153,7 @@ fieldset {
   border-width: 0;
   box-shadow: var(--color-border-default) 0 0 0 1px inset;
   color: var(--color-text-default);
-  font-size: 1rem;
+  font-size: 1.25rem;
   height: 3rem;
   line-height: 1.5rem;
   outline: none;
@@ -191,14 +191,14 @@ fieldset {
 .fs-radio-wrapper {
   align-items: center;
   display: flex;
-  height: 1.25rem;
+  height: 1.5rem;
 }
 
 .fs-checkbox,
 .fs-radio {
   background-color: #fff;
   border: 1px solid var(--color-border-default);
-  height: 1.25rem;
+  height: 1.5rem;
   width: 1.25rem;
 }
 
@@ -251,7 +251,7 @@ fieldset {
 .fs-slider {
   background: transparent;
   cursor: pointer;
-  height: 1.25rem;
+  height: 1.5rem;
   width: 100%;
 }
 
@@ -279,7 +279,7 @@ fieldset {
   appearance: none;
   background-color: var(--color-primary);
   border-radius: 50%;
-  height: 1.25rem;
+  height: 1.5rem;
   margin-top: -0.375rem; /* Centers thumb on the track */
   width: 1.25rem;
 }
@@ -308,7 +308,7 @@ fieldset {
   background-repeat: no-repeat;
   border-radius: 1.25rem;
   cursor: pointer;
-  height: 1.25rem;
+  height: 1.5rem;
   transition-duration: 200ms;
   transition-property: background-color, background-position;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
