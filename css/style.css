@@ -24,7 +24,6 @@
     /* Solarized accent colours */
     --sol-yellow:  #b58900;
     --sol-cyan:    #2aa198;
-    --sol-blue:    #268bd2;
 
     /* Semantic aliases — use these in components */
     --color-bg-dark:             var(--sol-base03);
@@ -76,8 +75,6 @@ html, body {
     color: var(--color-text-body);
 }
 
-
-
 h1, h2, h3, h4, h5, h6,
 .navbar-brand {
     font-family: 'Montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -87,7 +84,7 @@ h1, h2, h3, h4, h5, h6,
 #mainNav {
     background-color: var(--color-bg-dark);
     border-bottom: 1px solid var(--color-bg-dark-alt);
-    transition: background-color 0.3s ease, padding 0.3s ease;
+    /* Transition timing is defined in scrolling-nav.css for the media query */
 }
 
 #mainNav .navbar-brand {
@@ -140,6 +137,7 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1.5;
 }
 
+/* Override Bootstrap's .text-muted which uses !important — must use !important here too */
 .intro-content p.text-muted {
     color: var(--color-text-emphasis) !important;
     font-size: 1.05em;
@@ -205,6 +203,7 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 16px;
 }
 
+/* Override Bootstrap's .text-muted which uses !important */
 .services-section p.text-muted {
     color: var(--color-text-muted) !important;
 }
@@ -251,43 +250,6 @@ h1, h2, h3, h4, h5, h6,
     text-align: left;
 }
 
-.service-card:hover,
-.work-card:hover {
-    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 2px 6px var(--color-shadow-hover-sm);
-    transform: translateY(-3px);
-}
-
-/* ── Service Cards ──────────────────────────────────────── */
-.service-card {
-    padding: 32px 24px;
-    margin-bottom: 24px;
-    border-top: 3px solid var(--color-accent-primary);
-    text-align: left;
-}
-
-.service-card .fa-stack {
-    display: block;
-    margin: 0 auto 10px;
-    color: var(--color-accent-primary);
-}
-
-.service-card h3 {
-    text-align: center;
-}
-
-.service-card p:last-child,
-.work-card p:last-child {
-    margin-bottom: 0;
-}
-
-/* ── Work Cards ─────────────────────────────────────────── */
-.work-card {
-    padding: 28px 24px;
-    margin-bottom: 24px;
-    border-top: 3px solid var(--color-accent-secondary);
-    text-align: left;
-}
-
 .work-card-icon {
     color: var(--color-accent-secondary);
 }
@@ -301,6 +263,11 @@ h1, h2, h3, h4, h5, h6,
     border-bottom: 1px solid var(--color-bg-light-alt);
     padding-bottom: 10px;
     margin-bottom: 14px;
+}
+
+.service-card p:last-child,
+.work-card p:last-child {
+    margin-bottom: 0;
 }
 
 /* ── Contact Form ───────────────────────────────────────── */
@@ -335,6 +302,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--color-bg-light-alt);
 }
 
+/* Override Bootstrap's .text-muted which uses !important */
 .work-section .text-muted {
     color: var(--color-text-muted) !important;
     margin-bottom: 30px;
@@ -354,6 +322,7 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 30px;
 }
 
+/* Override Bootstrap's .text-muted which uses !important */
 .company-section p.text-muted {
     color: var(--color-text-muted) !important;
 }
@@ -361,11 +330,6 @@ h1, h2, h3, h4, h5, h6,
 .company-section address {
     color: var(--color-text-muted);
     line-height: 1.8;
-}
-
-/* ── Work cards row spacing ─────────────────────────────── */
-.work-cards-row {
-    margin-top: 24px;
 }
 
 /* ── Responsive Map ─────────────────────────────────────── */
@@ -383,12 +347,4 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
     height: 100%;
     border: none;
-}
-
-/* ── Portfolio layout ───────────────────────────────────── */
-.portfolio-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 30px;
 }
