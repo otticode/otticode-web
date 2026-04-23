@@ -3,6 +3,9 @@
  * -----------------------
  * All colours are defined here as CSS custom properties.
  * Use var(--sol-*) throughout — never hardcode hex values.
+ * Note: --color-card-bg is intentionally white (#fff), not a Solarized tone.
+ * The Solarized light bg (#fdf6e3) is used for section backgrounds; cards
+ * sit on top and need pure white for sufficient contrast.
  */
 :root {
     /* Solarized dark backgrounds */
@@ -39,6 +42,10 @@
     --color-shadow-sm:        rgba(7, 54, 66, 0.06);
     --color-shadow-hover:     rgba(7, 54, 66, 0.14);
     --color-shadow-hover-sm:  rgba(7, 54, 66, 0.08);
+
+    /* Layout tokens */
+    --section-padding-top:    100px;
+    --section-padding-bottom: 80px;
 }
 
 /* ── Focus / Accessibility ──────────────────────────────── */
@@ -122,7 +129,7 @@ h1, h2, h3, h4, h5, h6,
     padding-top: 120px;
     padding-bottom: 60px;
     text-align: center;
-    background-color: var(--color-bg-dark-alt) !important;
+    background-color: var(--color-bg-dark-alt);
 }
 
 .intro-section .jumbotron {
@@ -135,7 +142,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .intro-section .jumbotron strong {
-    color: var(--sol-base2) !important;
+    color: var(--sol-base2);
     font-size: 1.3em;
     line-height: 1.5;
 }
@@ -193,20 +200,16 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── Services Section ───────────────────────────────────── */
 .services-section {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
     text-align: center;
-    background-color: var(--color-bg-light) !important;
+    background-color: var(--color-bg-light);
 }
 
 .services-section h3 {
-    color: var(--color-text-body) !important;
+    color: var(--color-text-body);
     font-weight: 700;
     margin-top: 16px;
-}
-
-.services-section .fa-circle {
-    color: var(--color-accent-primary) !important;
 }
 
 .services-section p.text-muted {
@@ -241,15 +244,11 @@ h1, h2, h3, h4, h5, h6,
 .service-card .fa-stack {
     display: block;
     margin: 0 auto 10px;
+    color: var(--color-accent-primary);
 }
 
 .service-card h3 {
     text-align: center;
-}
-
-.service-card:hover {
-    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 2px 6px var(--color-shadow-hover-sm);
-    transform: translateY(-3px);
 }
 
 /* ── Work Cards ─────────────────────────────────────────── */
@@ -271,8 +270,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .work-card h3 {
-    border-left: none !important;
-    padding-left: 0 !important;
     border-bottom: 1px solid var(--color-bg-light-alt);
     padding-bottom: 10px;
     margin-bottom: 14px;
@@ -304,10 +301,10 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── Work Section ───────────────────────────────────────── */
 .work-section {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
     text-align: center;
-    background-color: var(--color-bg-light-alt) !important;
+    background-color: var(--color-bg-light-alt);
 }
 
 .work-section .text-muted {
@@ -315,17 +312,12 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 30px;
 }
 
-.work-section .portfolio-caption h3 {
-    color: var(--color-text-body) !important;
-    font-weight: 700 !important;
-}
-
 /* ── Company Section ────────────────────────────────────── */
 .company-section {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
     text-align: center;
-    background-color: var(--color-bg-light) !important;
+    background-color: var(--color-bg-light);
 }
 
 .company-section h3 {
