@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="otticode" ng-controller="AppCtrl">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="description" content=""> -->
+    <meta name="description" content="Otticode: NetSuite Implementation, SuiteScript Development & Payment Integration specialists. CPA-led technical team delivering custom NetSuite solutions including Stripe, Payhawk, and bank feed integrations from Barcelona.">
     <meta name="author" content="William Sandner">
     <title>Otticode</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,10 +14,11 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/formspree.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9a275ea748.js" crossorigin="anonymous"></script>
 </head>
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -46,7 +47,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#work">Work</a>
+                        <a class="page-scroll" href="#work">Our Work</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#company">Company</a>
@@ -66,15 +67,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="jumbotron">
-                        <img src="img/otticode-550x157-light.png" alt="Otticode" class="img-responsive center-block" width="550" height="157">
+                        <img src="img/otticode-550x157-light.png" alt="Otticode" class="img-responsive center-block" width="550" height="157" loading="lazy">
                         <p>
-                            <strong>Building the Future of Web & Enterprise Applications</strong>
+                            <strong>We make NetSuite work the way your business does.</strong>
                         </p>
-                        <p>
-                            <em style="font-size: smaller;">Say: oh-tee-code</em>
+                        <p class="text-muted">
+                            Implementation, SuiteScript customization, and financial integrations &mdash; done right.
                         </p>
                     </div>
-                    <a class="btn btn-default page-scroll" href="#services">Click Me to Scroll Down!</a>
+                    <a class="btn btn-default page-scroll" href="#services">See Our Services</a>
                 </div>
             </div>
         </div>
@@ -87,54 +88,44 @@
                     <h2>Services</h2>
                 </div>
                 <div class="row text-center">
+                    <!-- Service 1: NetSuite Implementation -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Web Application Development</h4>
-                        <p class="text-justify text-muted">
-                            Harness the power of modern web technologies with
-                            our expertise in Next.js, React, and full-stack 
-                            JavaScript solutions. We design and develop 
-                            high-performance, user-friendly web applications 
-                            that scale with your business needs. From startups 
-                            to enterprises, we create solutions that drive 
-                            engagement and efficiency.</p>
+                        <div class="service-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">NetSuite Implementation</h4>
+                            <p class="text-muted">
+                                We guide businesses through every stage of NetSuite deployment — from initial configuration and chart of accounts setup to module activation, data migration, and user training. Our accounting expertise spans US GAAP, Spanish standards, and a wide range of European and international requirements, ensuring your financial workflows and compliance requirements are correctly reflected in NetSuite from day one — wherever your business operates.
+                            </p>
+                        </div>
                     </div>
+                    <!-- Service 2: SuiteScript & Customization -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Mobile Application Development</h4>
-                        <p class="text-justify text-muted">
-                            Your customers are on the go, and so should your business. 
-                            Our mobile development team specializes in progressive web 
-                            applications (PWAs) and cross-platform mobile apps that 
-                            deliver a seamless experience across devices. We 
-                            leverage modern frameworks to ensure speed, security, 
-                            and responsiveness for all mobile platforms.
-                        </p>
+                        <div class="service-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">SuiteScript & Customization</h4>
+                            <p class="text-muted">
+                                NetSuite is powerful out of the box, but every business has processes that require a more tailored approach. We design and build custom scripts, automations, and workflows that extend NetSuite to fit how your organization actually operates — improving efficiency, reducing risk, and giving your team tools that feel purpose-built for your business.
+                            </p>
+                        </div>
                     </div>
+                    <!-- Service 3: Payment & Financial Integrations -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4>Cloud Architecture</h4>
-                        <p class="text-justify text-muted">
-                            We have extensive experience designing and 
-                            deploying high-performance, highly available 
-                            solutions on AWS, Azure, and Google Cloud. Our 
-                            expertise includes containerized deployments with 
-                            Docker and Kubernetes, as well as serverless 
-                            architectures that ensure scalability and cost 
-                            efficiency. Whether you're migrating to the cloud 
-                            or optimizing existing infrastructure, we provide 
-                            tailored solutions that enhance resilience and 
-                            operational agility.
-                        </p>
+                        <div class="service-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Payment & Financial Integrations</h4>
+                            <p class="text-muted">
+                                We connect NetSuite with the financial tools your business relies on. Our integration experience includes Stripe, Payhawk, bank feeds, and other payment platforms — automating reconciliation, transaction syncing, and financial reporting. We handle the technical complexity so your accounting team works with clean, accurate data in real time.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,56 +136,50 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Work</h2>
+                    <h2>Our Work</h2>
                     <div class="row mt-4">
-                        <!-- 1 -->
-                        <div class="col-md-4 portfolio-item d-flex flex-column align-items-start">
-                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-building fa-3x"></i>
-                                    </div>
+                        <!-- 1: Implementations -->
+                        <div class="col-md-4 portfolio-item">
+                            <div class="work-card">
+                                <div class="work-card-header">
+                                    <span class="fa-stack fa-3x work-card-icon">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-server fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4>NetSuite Implementations & Migrations</h4>
                                 </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>IoT Monitoring for Smart Buildings</h4>
-                                <p class="text-justify text-muted">
-                                    We built a web-based IoT monitoring platform that helps facility managers
-                                    track energy consumption, security systems, and environmental conditions in
-                                    real time. Our solution integrates with various IoT sensors to provide
-                                    actionable insights for smart building management.
+                                <p class="text-muted">
+                                    We have delivered NetSuite implementations from the ground up and managed migrations from legacy accounting systems. This means translating your business requirements into a properly structured NetSuite environment — chart of accounts, subsidiary structures, accounting periods, and data migration — designed to be accurate and maintainable from the very first day in production.
                                 </p>
                             </div>
                         </div>
-                        <!-- 2 -->
-                        <div class="col-md-4 portfolio-item d-flex flex-column align-items-start">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-list fa-3x m-3"></i>
-                                    </div>
+                        <!-- 2: Customization -->
+                        <div class="col-md-4 portfolio-item">
+                            <div class="work-card">
+                                <div class="work-card-header">
+                                    <span class="fa-stack fa-3x work-card-icon">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-sitemap fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4>Customization & Workflow Automation</h4>
                                 </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>NetSuite Reports & Forms</h4>
-                                <p class="text-justify text-muted">
-                                    NetSuite is powerful, but it often requires tailored configurations to fit unique business needs. We've helped multiple clients optimize their reporting, enhance workflows, and customize NetSuite forms to streamline their operations.
+                                <p class="text-muted">
+                                    We have built custom scripts, workflows, forms, fields, and dashboards for clients across a range of industries. Whether automating multi-step approval processes, tailoring transaction forms to match internal procedures, or surfacing the right data for the right people — we make NetSuite behave the way your team expects it to.
                                 </p>
                             </div>
                         </div>
-                        <!-- 3 -->
-                        <div class="col-md-4 portfolio-item d-flex flex-column align-items-start">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-money-bill fa-3x"></i>
-                                    </div>
+                        <!-- 3: Integrations -->
+                        <div class="col-md-4 portfolio-item">
+                            <div class="work-card">
+                                <div class="work-card-header">
+                                    <span class="fa-stack fa-3x work-card-icon">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-plug fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <h4>Integrations, Clean-ups & Training</h4>
                                 </div>
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Algorithmic Trading Bot</h4>
-                                <p class="text-justify text-muted">
-                                    Currently, we are developing a high-frequency trading bot that utilizes advanced algorithmic strategies. Designed for financial markets, this solution automates trade execution, monitors real-time data, and optimizes investment performance through smart analytics.
+                                <p class="text-muted">
+                                    Beyond implementations and customizations, we connect NetSuite with payment platforms, bank feeds, and third-party systems to keep financial data flowing reliably. We also help organizations untangle accumulated technical debt — cleaning up configurations that have drifted over time — and deliver hands-on training so your team gets the most out of the system.
                                 </p>
                             </div>
                         </div>
@@ -207,13 +192,13 @@
     <section id="company" class="company-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Ready to Build with Us?</h2>
-                    <p class="text-justify text-muted custom-paragraph">
-                        Whether you need a custom web application, mobile solution, or NetSuite 
-                        integration, Otticode is your partner in innovation. Let's bring your 
-                        ideas to life.
-                    </p>
+<div class="col-lg-12 text-center">
+                    <h2>Who We Are</h2>
+                    <div class="who-card">
+                        <p class="text-muted">
+                            Otticode is a boutique NetSuite consultancy founded by a CFO/CPA and a veteran software engineer, both specializing in NetSuite whose background spans enterprise systems, full-stack development, and NetSuite. We combine financial domain knowledge with technical precision to deliver NetSuite implementations, customizations, and integrations that actually fit how your business works. We work closely with a small number of clients to ensure every engagement gets our full attention.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -285,7 +270,7 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <!-- Custom Javascript -->
-    <script type="text/javascript" src="js/controller.js"></script>
+    
 </body>
 
 </html>
