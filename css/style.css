@@ -1,17 +1,45 @@
 /*
- * Solarized palette reference
- * ---------------------------
- * base03:  #002b36  (darkest bg)
- * base02:  #073642  (dark bg highlight)
- * base01:  #586e75  (secondary content)
- * base0:   #839496  (body text on dark)
- * base1:   #93a1a1  (emphasis on dark)
- * base2:   #eee8d5  (light bg highlight)
- * base3:   #fdf6e3  (lightest bg)
- * yellow:  #b58900
- * cyan:    #2aa198
- * blue:    #268bd2
+ * Solarized Design Tokens
+ * -----------------------
+ * All colours are defined here as CSS custom properties.
+ * Use var(--sol-*) throughout — never hardcode hex values.
  */
+:root {
+    /* Solarized dark backgrounds */
+    --sol-base03:  #002b36;
+    --sol-base02:  #073642;
+
+    /* Solarized content tones */
+    --sol-base01:  #586e75;
+    --sol-base0:   #839496;
+    --sol-base1:   #93a1a1;
+
+    /* Solarized light backgrounds */
+    --sol-base2:   #eee8d5;
+    --sol-base3:   #fdf6e3;
+
+    /* Solarized accent colours */
+    --sol-yellow:  #b58900;
+    --sol-cyan:    #2aa198;
+    --sol-blue:    #268bd2;
+
+    /* Semantic aliases — use these in components */
+    --color-bg-dark:          var(--sol-base03);
+    --color-bg-dark-alt:      var(--sol-base02);
+    --color-bg-light:         var(--sol-base3);
+    --color-bg-light-alt:     var(--sol-base2);
+    --color-text-body:        var(--sol-base02);
+    --color-text-muted:       var(--sol-base01);
+    --color-text-dark-bg:     var(--sol-base1);
+    --color-text-emphasis:    var(--sol-base0);
+    --color-accent-primary:   var(--sol-cyan);
+    --color-accent-secondary: var(--sol-yellow);
+    --color-card-bg:          #fff;
+    --color-shadow:           rgba(7, 54, 66, 0.08);
+    --color-shadow-sm:        rgba(7, 54, 66, 0.06);
+    --color-shadow-hover:     rgba(7, 54, 66, 0.14);
+    --color-shadow-hover-sm:  rgba(7, 54, 66, 0.08);
+}
 
 /* ── Focus / Accessibility ──────────────────────────────── */
 a:focus-visible,
@@ -20,13 +48,13 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-    outline: 2px solid #2aa198;
+    outline: 2px solid var(--color-accent-primary);
     outline-offset: 2px;
 }
 
 .btn:focus-visible,
 .form-control:focus-visible {
-    outline: 2px solid #2aa198;
+    outline: 2px solid var(--color-accent-primary);
     outline-offset: 2px;
     box-shadow: none;
 }
@@ -38,7 +66,7 @@ html, body {
     font-family: 'Source Sans 3', 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 17px;
     line-height: 1.7;
-    color: #073642;
+    color: var(--color-text-body);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -48,44 +76,44 @@ h1, h2, h3, h4, h5, h6,
 
 /* ── Navbar ─────────────────────────────────────────────── */
 .navbar.navbar-default {
-    background-color: #002b36 !important;
-    border-color: #073642 !important;
+    background-color: var(--color-bg-dark) !important;
+    border-color: var(--color-bg-dark-alt) !important;
 }
 
 .navbar.navbar-default .navbar-brand {
-    color: #2aa198 !important;
+    color: var(--color-accent-primary) !important;
     font-weight: 700;
     letter-spacing: 0.04em;
 }
 
 .navbar.navbar-default .navbar-brand:hover,
 .navbar.navbar-default .navbar-brand:focus {
-    color: #93a1a1 !important;
+    color: var(--color-text-dark-bg) !important;
 }
 
 .navbar.navbar-default .navbar-nav > li > a {
-    color: #93a1a1 !important;
+    color: var(--color-text-dark-bg) !important;
     font-weight: 500;
     letter-spacing: 0.03em;
 }
 
 .navbar.navbar-default .navbar-nav > li > a:hover,
 .navbar.navbar-default .navbar-nav > li > a:focus {
-    color: #2aa198 !important;
+    color: var(--color-accent-primary) !important;
     background-color: transparent !important;
 }
 
 .navbar.navbar-default .navbar-toggle {
-    border-color: #586e75 !important;
+    border-color: var(--color-text-muted) !important;
 }
 
 .navbar.navbar-default .navbar-toggle .icon-bar {
-    background-color: #93a1a1 !important;
+    background-color: var(--color-text-dark-bg) !important;
 }
 
 .navbar.navbar-default .navbar-toggle:hover,
 .navbar.navbar-default .navbar-toggle:focus {
-    background-color: #073642 !important;
+    background-color: var(--color-bg-dark-alt) !important;
 }
 
 /* ── Intro / Jumbotron ──────────────────────────────────── */
@@ -94,12 +122,12 @@ h1, h2, h3, h4, h5, h6,
     padding-top: 120px;
     padding-bottom: 60px;
     text-align: center;
-    background-color: #073642 !important;
+    background-color: var(--color-bg-dark-alt) !important;
 }
 
 .intro-section .jumbotron {
     background-color: transparent !important;
-    color: #93a1a1 !important;
+    color: var(--color-text-dark-bg) !important;
     border-radius: 0;
     padding: 40px;
     border: none;
@@ -107,21 +135,21 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .intro-section .jumbotron strong {
-    color: #eee8d5 !important;
+    color: var(--sol-base2) !important;
     font-size: 1.3em;
     line-height: 1.5;
 }
 
 .intro-section .jumbotron p.text-muted {
-    color: #839496 !important;
+    color: var(--color-text-emphasis) !important;
     font-size: 1.05em;
 }
 
 /* ── CTA Button ─────────────────────────────────────────── */
 .intro-section .btn-default {
     background-color: transparent !important;
-    border: 2px solid #2aa198 !important;
-    color: #2aa198 !important;
+    border: 2px solid var(--color-accent-primary) !important;
+    color: var(--color-accent-primary) !important;
     font-weight: 600;
     font-size: 0.95em;
     letter-spacing: 0.12em;
@@ -142,9 +170,9 @@ h1, h2, h3, h4, h5, h6,
 
 .intro-section .btn-default:hover,
 .intro-section .btn-default:focus {
-    background-color: #2aa198 !important;
-    border-color: #2aa198 !important;
-    color: #002b36 !important;
+    background-color: var(--color-accent-primary) !important;
+    border-color: var(--color-accent-primary) !important;
+    color: var(--color-bg-dark) !important;
 }
 
 .intro-section .btn-default:hover::after,
@@ -153,44 +181,59 @@ h1, h2, h3, h4, h5, h6,
     margin-left: 4px;
 }
 
-/* ── Services Section ───────────────────────────────────── */
-.services-section {
-    padding-top: 100px;
-    padding-bottom: 80px;
-    text-align: center;
-    background-color: #fdf6e3 !important;
-}
-
-.services-section h2 {
-    color: #073642 !important;
+/* ── Shared Section Heading ─────────────────────────────── */
+.services-section h2,
+.work-section h2,
+.company-section h2 {
+    color: var(--color-text-body) !important;
     font-weight: 700;
     letter-spacing: 0.04em;
     margin-bottom: 30px;
 }
 
-.services-section h4 {
-    color: #073642 !important;
+/* ── Services Section ───────────────────────────────────── */
+.services-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: var(--color-bg-light) !important;
+}
+
+.services-section h3 {
+    color: var(--color-text-body) !important;
     font-weight: 700;
     margin-top: 16px;
 }
 
 .services-section .fa-circle {
-    color: #2aa198 !important;
+    color: var(--color-accent-primary) !important;
 }
 
 .services-section p.text-muted {
-    color: #586e75 !important;
+    color: var(--color-text-muted) !important;
+}
+
+/* ── Shared Card Base ───────────────────────────────────── */
+.service-card,
+.work-card,
+.who-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--color-shadow), 0 1px 3px var(--color-shadow-sm);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.service-card:hover,
+.work-card:hover {
+    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 2px 6px var(--color-shadow-hover-sm);
+    transform: translateY(-3px);
 }
 
 /* ── Service Cards ──────────────────────────────────────── */
 .service-card {
-    background-color: #fff;
-    border-radius: 8px;
     padding: 32px 24px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 8px rgba(7, 54, 66, 0.08), 0 1px 3px rgba(7, 54, 66, 0.06);
-    border-top: 3px solid #2aa198;
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    border-top: 3px solid var(--color-accent-primary);
     height: 100%;
     text-align: left;
 }
@@ -200,35 +243,26 @@ h1, h2, h3, h4, h5, h6,
     margin: 0 auto 10px;
 }
 
-.service-card h4 {
+.service-card h3 {
     text-align: center;
 }
 
 .service-card:hover {
-    box-shadow: 0 8px 24px rgba(7, 54, 66, 0.14), 0 2px 6px rgba(7, 54, 66, 0.08);
+    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 2px 6px var(--color-shadow-hover-sm);
     transform: translateY(-3px);
 }
 
 /* ── Work Cards ─────────────────────────────────────────── */
 .work-card {
-    background-color: #fff;
-    border-radius: 8px;
     padding: 28px 24px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 8px rgba(7, 54, 66, 0.08), 0 1px 3px rgba(7, 54, 66, 0.06);
-    border-top: 3px solid #b58900;
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    border-top: 3px solid var(--color-accent-secondary);
     text-align: left;
     height: 100%;
 }
 
-.work-card:hover {
-    box-shadow: 0 8px 24px rgba(7, 54, 66, 0.14), 0 2px 6px rgba(7, 54, 66, 0.08);
-    transform: translateY(-3px);
-}
-
 .work-card-icon {
-    color: #b58900;
+    color: var(--color-accent-secondary);
 }
 
 .work-card-header {
@@ -236,10 +270,10 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 16px;
 }
 
-.work-card h4 {
+.work-card h3 {
     border-left: none !important;
     padding-left: 0 !important;
-    border-bottom: 1px solid #eee8d5;
+    border-bottom: 1px solid var(--color-bg-light-alt);
     padding-bottom: 10px;
     margin-bottom: 14px;
 }
@@ -249,22 +283,23 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 1.5rem;
 }
 
+.fs-field + .fs-field {
+    margin-top: 0.5rem;
+}
+
 /* ── Who We Are Card ────────────────────────────────────── */
 .who-card {
-    background-color: #fff;
-    border-radius: 8px;
     padding: 32px 40px;
     margin: 20px auto 40px;
     max-width: 750px;
-    box-shadow: 0 2px 8px rgba(7, 54, 66, 0.08), 0 1px 3px rgba(7, 54, 66, 0.06);
-    border-top: 3px solid #2aa198;
+    border-top: 3px solid var(--color-accent-primary);
     text-align: left;
 }
 
 .who-card p {
     margin: 0;
     font-size: 1.05em;
-    color: #586e75 !important;
+    color: var(--color-text-muted) !important;
 }
 
 /* ── Work Section ───────────────────────────────────────── */
@@ -272,23 +307,16 @@ h1, h2, h3, h4, h5, h6,
     padding-top: 100px;
     padding-bottom: 80px;
     text-align: center;
-    background-color: #eee8d5 !important;
-}
-
-.work-section h2 {
-    color: #073642 !important;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 30px;
+    background-color: var(--color-bg-light-alt) !important;
 }
 
 .work-section .text-muted {
-    color: #586e75 !important;
+    color: var(--color-text-muted) !important;
     margin-bottom: 30px;
 }
 
-.work-section .portfolio-caption h4 {
-    color: #073642 !important;
+.work-section .portfolio-caption h3 {
+    color: var(--color-text-body) !important;
     font-weight: 700 !important;
 }
 
@@ -297,80 +325,50 @@ h1, h2, h3, h4, h5, h6,
     padding-top: 100px;
     padding-bottom: 80px;
     text-align: center;
-    background-color: #fdf6e3 !important;
-}
-
-.company-section h2 {
-    color: #073642 !important;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 30px;
+    background-color: var(--color-bg-light) !important;
 }
 
 .company-section h3 {
-    color: #2aa198 !important;
+    color: var(--color-accent-primary) !important;
     font-weight: 600;
     margin-top: 30px;
 }
 
 .company-section p.text-muted {
-    color: #586e75 !important;
+    color: var(--color-text-muted) !important;
 }
 
 .company-section address {
-    color: #586e75;
+    color: var(--color-text-muted);
     line-height: 1.8;
 }
 
+/* ── Work cards row spacing ─────────────────────────────── */
+.work-cards-row {
+    margin-top: 24px;
+}
+
+/* ── Responsive Map ─────────────────────────────────────── */
+.map-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+    margin-top: 20px;
+}
+
+.map-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* ── Portfolio layout ───────────────────────────────────── */
-.custom-paragraph {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .portfolio-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 30px;
-}
-
-.portfolio-caption {
-    flex-grow: 1;
-}
-
-/* ── Icons (Solarized SVG masks) ────────────────────────── */
-.eos-icons--iot {
-    display: inline-block;
-    width: 3em;
-    height: 3em;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M5 13v9H3v-9Zm18 0v2h-2v7h-2v-7h-2v-2Zm-11-2a7.54 7.54 0 0 1 3.96 1.149l1.447-1.45A9.5 9.5 0 0 0 12 9a9.36 9.36 0 0 0-5.333 1.68l1.449 1.453A7.36 7.36 0 0 1 12 11'/%3E%3Cpath fill='%23000' d='M12 7a11.5 11.5 0 0 1 6.834 2.27l1.427-1.43A13.48 13.48 0 0 0 12 5a13.33 13.33 0 0 0-8.186 2.822l1.426 1.43A11.34 11.34 0 0 1 12 7'/%3E%3Cpath fill='%23000' d='M12 3a15.47 15.47 0 0 1 9.687 3.41l1.427-1.429A17.43 17.43 0 0 0 .96 4.964l1.427 1.429A15.33 15.33 0 0 1 12 3m0 10a4.5 4.5 0 1 0 4.5 4.5A4.5 4.5 0 0 0 12 13m0 7a2.5 2.5 0 1 1 2.5-2.5A2.5 2.5 0 0 1 12 20'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-}
-
-.cib--oracle-netsuite {
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M31.518 11.688c.026 0 .064 0 .077-.039c.013-.013.013-.025.013-.038a.07.07 0 0 0-.038-.064c-.026-.013-.052-.013-.09-.013h-.026v.14h.064m-.038-.204c.064 0 .102 0 .128.013c.09.025.09.115.09.14v.039c0 .026-.013.064-.065.09c0 0-.012.012-.025.012l.115.205h-.115l-.09-.192h-.064v.192h-.102v-.499zm.038.703a.445.445 0 0 0 .448-.447a.437.437 0 0 0-.448-.448a.453.453 0 0 0-.447.448c0 .243.204.447.447.447m-.345-.447c0-.192.153-.345.358-.345c.192 0 .345.153.345.345a.344.344 0 0 1-.345.345a.34.34 0 0 1-.358-.345m-3.107 2.851a1.29 1.29 0 0 1-1.24-.933h3.26l.448-.703h-3.708a1.29 1.29 0 0 1 1.24-.934h2.238l.447-.703h-2.736c-1.1 0-1.982.895-1.982 1.982c0 1.1.895 1.982 1.982 1.982h2.353l.447-.704h-2.749m-9.334.704h2.365l.448-.704h-2.749a1.285 1.285 0 0 1-1.292-1.278c0-.716.576-1.279 1.292-1.279h2.238l.447-.703h-2.736c-1.1 0-1.995.895-1.995 1.982c0 1.1.895 1.982 1.982 1.982m-14.487-.69H2.033a1.28 1.28 0 0 1-1.279-1.28c0-.715.576-1.278 1.279-1.278h2.2c.715 0 1.29.575 1.29 1.279c0 .703-.575 1.278-1.278 1.278m-2.263.69h2.301c1.1 0 1.982-.882 1.982-1.981s-.882-1.982-1.982-1.982H1.982A1.99 1.99 0 0 0 0 13.286c0 1.1.895 1.982 1.982 1.982m8.042-1.279a1.342 1.342 0 1 0 0-2.685H6.687v3.964h.767v-3.26h2.52c.357 0 .639.28.639.638c0 .359-.282.64-.64.64H7.825l2.276 1.982h1.113l-1.535-1.292h.345m12.62.601v-3.273h-.767v3.593q0 .154.115.268a.4.4 0 0 0 .282.115h3.478l.447-.703zm-9.334-.703h2.033l-1.074-1.739l-1.982 3.133h-.908l2.404-3.76a.56.56 0 0 1 .473-.242c.192 0 .358.089.46.242l2.417 3.772h-.895l-.422-.703h-2.059zM.371 17.659h1.01l1.227 2.57v-2.57h.653v3.273h-.96l-1.265-2.724v2.711H.371zm3.631 0h2.187v.537H4.705v.78h1.394v.537H4.705v.882H6.24v.537H4.002zm3.593.537h-.972v-.537h2.66v.537h-.972v2.736h-.703v-2.736zm2.532 1.777c.013.23.038.652.792.652c.678 0 .768-.422.768-.588c0-.37-.294-.435-.755-.55c-.498-.128-.716-.179-.882-.294a.73.73 0 0 1-.345-.64c0-.664.626-.958 1.24-.958c.294 0 .537.064.716.179c.32.192.448.524.448.857h-.691c0-.23-.115-.5-.511-.5c-.32 0-.614.154-.614.46c0 .294.23.37.652.474c.627.153.793.23.959.358c.23.166.37.422.37.69c0 .742-.601 1.036-1.342 1.036c-.89 0-1.304-.46-1.304-1.176zm3.184-1.777h1.01l1.227 2.57v-2.57h.652v3.273h-.959l-1.265-2.724v2.711h-.665zm3.529 0h2.186v.537h-1.483v.78h1.393v.537h-1.393v.882h1.535v.537H16.84zm3.593.537h-.972v-.537h2.66v.537h-.971v2.736h-.704v-2.736zm2.891-.537h.703v3.273h-.703zm1.777 0h1.01l1.228 2.57v-2.57h.652v3.273h-.959l-1.265-2.724v2.711h-.666zm3.516 1.636c0-.998.716-1.713 1.726-1.713c.793 0 1.393.435 1.586 1.1h-.742c-.166-.32-.486-.525-.857-.525c-.601 0-1.01.486-1.01 1.138c0 .652.41 1.138 1.01 1.138a.9.9 0 0 0 .882-.601h.729c-.192.703-.793 1.163-1.611 1.163c-1.01 0-1.713-.716-1.713-1.7'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
 }
