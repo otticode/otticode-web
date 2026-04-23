@@ -1,15 +1,14 @@
 /*!
- * Start Bootstrap - Scrolling Nav
- * Scroll transition only — all theme styles live in style.css
+ * Scrolling Nav — all theme styles live in style.css
  */
 
 @media (min-width: 768px) {
-    .navbar {
+    #mainNav {
         padding: 20px 0;
         transition: background-color 0.5s ease-in-out, padding 0.5s ease-in-out;
     }
 
-    .top-nav-collapse {
+    #mainNav.top-nav-collapse {
         padding: 0;
     }
 }
