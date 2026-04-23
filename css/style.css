@@ -197,12 +197,6 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--color-bg-light);
 }
 
-.services-section h3 {
-    color: var(--color-text-body);
-    font-weight: 700;
-    margin-top: 16px;
-}
-
 /* Override Bootstrap's .text-muted which uses !important */
 .services-section p.text-muted {
     color: var(--color-text-muted) !important;
@@ -239,6 +233,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .service-card h3 {
+    color: var(--color-text-body);
+    font-weight: 700;
+    margin-top: 16px;
     text-align: center;
 }
 
@@ -260,6 +257,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .work-card h3 {
+    font-weight: 700;
     border-bottom: 1px solid var(--color-bg-light-alt);
     padding-bottom: 10px;
     margin-bottom: 14px;
@@ -271,13 +269,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ── Contact Form ───────────────────────────────────────── */
-.fs-button-group {
-    margin-top: 1.5rem;
-}
-
-.fs-field + .fs-field {
-    margin-top: 0.5rem;
-}
+/* formspree.css defines the base form styles; no overrides needed here */
 
 /* ── Who We Are Card ────────────────────────────────────── */
 .who-card {
@@ -288,6 +280,7 @@ h1, h2, h3, h4, h5, h6,
     text-align: left;
 }
 
+/* Override Bootstrap's .text-muted which uses !important */
 .who-card p {
     margin: 0;
     font-size: 1.05em;
@@ -300,12 +293,6 @@ h1, h2, h3, h4, h5, h6,
     padding-bottom: var(--section-padding-bottom);
     text-align: center;
     background-color: var(--color-bg-light-alt);
-}
-
-/* Override Bootstrap's .text-muted which uses !important */
-.work-section .text-muted {
-    color: var(--color-text-muted) !important;
-    margin-bottom: 30px;
 }
 
 /* ── Company Section ────────────────────────────────────── */
@@ -327,11 +314,6 @@ h1, h2, h3, h4, h5, h6,
     color: var(--color-text-muted) !important;
 }
 
-.company-section address {
-    color: var(--color-text-muted);
-    line-height: 1.8;
-}
-
 /* ── Responsive Map ─────────────────────────────────────── */
 .map-embed {
     position: relative;
@@ -347,4 +329,10 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+footer {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-muted);
 }

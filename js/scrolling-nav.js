@@ -59,12 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
             var target = document.querySelector(href);
             if (!target) return;
 
-            // Prevent default only for internal anchor links
-            if (href.startsWith('#')) {
-                e.preventDefault();
-                smoothScrollTo(target);
-                closeNavbar();
-            }
+            // All .page-scroll hrefs are internal anchors; prevent default and scroll
+            e.preventDefault();
+            smoothScrollTo(target);
+            closeNavbar();
         });
     });
 });
