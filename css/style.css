@@ -325,7 +325,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ── Contact Form ───────────────────────────────────────── */
-/* formspree.css defines the base form styles; no overrides needed here */
+#company .fs-form {
+    background-color: var(--color-bg-light-alt);
+    border-radius: 8px;
+    padding: 32px 40px;
+    max-width: 750px;
+    margin: 0 auto;
+    border-top: 3px solid var(--color-accent-primary);
+}
 
 /* ── Who We Are Card ────────────────────────────────────── */
 .who-card {
@@ -371,11 +378,19 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ── Responsive Map ─────────────────────────────────────── */
+.map-wrapper {
+    background-color: var(--color-bg-light-alt);
+    border-radius: 8px;
+    border-top: 3px solid var(--color-accent-primary);
+    padding: 24px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 .map-embed {
     position: relative;
     width: 100%;
     padding-bottom: 45%;
-    margin-top: 20px;
 }
 
 .map-embed iframe {
