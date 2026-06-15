@@ -144,6 +144,32 @@ h1, h2, h3, h4, h5, h6,
     padding-bottom: 60px;
     text-align: center;
     background-color: var(--color-bg-dark-alt);
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-section::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(42, 161, 152, 0.12) 0%, transparent 70%);
+    top: -250px;
+    right: -150px;
+    pointer-events: none;
+}
+
+.intro-section::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(181, 137, 0, 0.08) 0%, transparent 70%);
+    bottom: -120px;
+    left: -80px;
+    pointer-events: none;
 }
 
 .intro-content {
@@ -169,7 +195,7 @@ h1, h2, h3, h4, h5, h6,
     border: 2px solid var(--color-accent-primary);
     color: var(--color-accent-primary);
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 1rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 12px 36px;
@@ -334,7 +360,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .company-section h3 {
-    color: var(--color-accent-primary);
+    color: #1a7a72;
     font-weight: 600;
     margin-top: 30px;
 }
