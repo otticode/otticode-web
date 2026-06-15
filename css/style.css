@@ -186,11 +186,12 @@ h1, h2, h3, h4, h5, h6,
 .intro-content .h1-tagline {
     display: block;
     color: var(--color-text-light-emphasis);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Source Sans 3', 'Segoe UI', Helvetica, Arial, sans-serif;
     margin-top: 10px;
+    letter-spacing: 0.02em;
 }
 
 /* Override Bootstrap's .text-muted which uses !important — must use !important here too */
