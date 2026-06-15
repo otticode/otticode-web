@@ -324,14 +324,21 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 0;
 }
 
-/* ── Contact Form ───────────────────────────────────────── */
-#company .fs-form {
-    background-color: var(--color-bg-light-alt);
+/* ── Content Cards ──────────────────────────────────────── */
+.content-card {
+    background-color: var(--color-card-bg);
     border-radius: 8px;
+    box-shadow: 0 2px 8px var(--color-shadow), 0 1px 3px var(--color-shadow-sm);
     padding: 32px 40px;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0 auto 48px;
     border-top: 3px solid var(--color-accent-primary);
+}
+
+.content-card .fs-form {
+    background-color: var(--color-bg-light-alt);
+    border-radius: 6px;
+    padding: 24px 28px;
 }
 
 /* ── Who We Are Card ────────────────────────────────────── */
@@ -377,16 +384,25 @@ h1, h2, h3, h4, h5, h6,
     color: var(--color-text-muted) !important;
 }
 
-/* ── Responsive Map ─────────────────────────────────────── */
-.map-wrapper {
-    background-color: var(--color-bg-light-alt);
-    border-radius: 8px;
-    border-top: 3px solid var(--color-accent-primary);
-    padding: 24px;
-    max-width: 750px;
-    margin: 0 auto;
+/* Container heading inside form/map cards */
+.container-head {
+    text-align: center;
+    margin-bottom: 24px;
 }
 
+.container-head h3 {
+    color: var(--color-text-body);
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.container-head p {
+    margin: 0;
+    font-size: 1em;
+    color: var(--color-text-muted) !important;
+}
+
+/* ── Responsive Map ─────────────────────────────────────── */
 .map-embed {
     position: relative;
     width: 100%;
@@ -461,7 +477,8 @@ footer {
 
 footer a {
     color: var(--color-text-dark-bg);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 footer a:hover {
