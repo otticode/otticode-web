@@ -400,6 +400,27 @@ h1, h2, h3, h4, h5, h6,
     transform: translateY(0);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .service-card:hover,
+    .work-card:hover {
+        transform: none;
+    }
+
+    .btn-oc::after {
+        display: none;
+    }
+
+    .skip-link {
+        transition: none;
+    }
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 footer {
     background-color: var(--color-bg-dark);
