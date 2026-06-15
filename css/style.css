@@ -31,7 +31,7 @@
     --color-bg-light:            var(--sol-base3);
     --color-bg-light-alt:        var(--sol-base2);
     --color-text-body:           var(--sol-base02);
-    --color-text-muted:          var(--sol-base01);
+    --color-text-muted:          #3f5560;
     --color-text-dark-bg:        var(--sol-base1);
     --color-text-emphasis:       var(--sol-base0);
     --color-text-light-emphasis: var(--sol-base2); /* bold text on dark backgrounds */
@@ -46,6 +46,25 @@
     /* Layout tokens */
     --section-padding-top:    100px;
     --section-padding-bottom: 80px;
+}
+
+/* ── Skip to content ────────────────────────────────────── */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 10000;
+    padding: 10px 20px;
+    background: var(--color-accent-primary);
+    color: var(--color-bg-dark);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: top 0.15s ease;
+}
+.skip-link:focus {
+    top: 0;
+    outline: none;
 }
 
 /* ── Focus / Accessibility ──────────────────────────────── */
@@ -203,6 +222,18 @@ h1, h2, h3, h4, h5, h6,
     color: var(--color-text-muted) !important;
 }
 
+/* ── Card Layout (equal height) ─────────────────────────── */
+.services-section .col-md-4,
+.work-section .col-md-4 {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.service-card,
+.work-card {
+    width: 100%;
+}
+
 /* ── Shared Card Base ───────────────────────────────────── */
 .service-card,
 .work-card,
@@ -222,7 +253,6 @@ h1, h2, h3, h4, h5, h6,
 /* ── Service Cards ──────────────────────────────────────── */
 .service-card {
     padding: 32px 24px;
-    margin-bottom: 24px;
     border-top: 3px solid var(--color-accent-primary);
     text-align: left;
 }
@@ -243,7 +273,6 @@ h1, h2, h3, h4, h5, h6,
 /* ── Work Cards ─────────────────────────────────────────── */
 .work-card {
     padding: 28px 24px;
-    margin-bottom: 24px;
     border-top: 3px solid var(--color-accent-secondary);
     text-align: left;
 }
@@ -330,6 +359,18 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* ── Scroll Animations ──────────────────────────────────── */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ── Footer ──────────────────────────────────────────────── */

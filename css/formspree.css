@@ -9,7 +9,7 @@
   --color-primary: #2aa198;
   --color-primary-active: #d33682;
   --color-text-default: #000000;
-  --color-text-muted: #657b83;
+  --color-text-muted: #4a6070;
 
   --font-family-body: "Source Sans 3", system-ui, sans-serif;
   --font-family-display: "Montserrat", system-ui, sans-serif;
@@ -100,7 +100,7 @@ fieldset {
   color: var(--color-text-default);
   display: block;
   font-family: var(--font-family-display);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   line-height: 1.5rem;
   margin-top: 1.25rem;
 }
@@ -108,8 +108,8 @@ fieldset {
 .fs-description {
   color: var(--color-text-muted);
   display: block;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 
 .fs-button-group {
@@ -127,7 +127,7 @@ fieldset {
   border-radius: 9999px;
   color: white;
   cursor: pointer;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
   padding: 0.75rem 2rem;
@@ -152,7 +152,7 @@ fieldset {
   border-width: 0;
   box-shadow: var(--color-border-default) 0 0 0 1px inset;
   color: var(--color-text-default);
-  font-size: 1.25rem;
+  font-size: 1rem;
   height: 3rem;
   line-height: 1.5rem;
   outline: none;
