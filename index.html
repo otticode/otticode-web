@@ -13,6 +13,38 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Social / OG -->
+    <meta property="og:title" content="Otticode — NetSuite Implementation &amp; SuiteScript Specialists">
+    <meta property="og:description" content="NetSuite implementation, SuiteScript customization, and financial integrations — done right. CPA-led technical team from Barcelona.">
+    <meta property="og:url" content="https://otticode.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://otticode.com/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Otticode — NetSuite Implementation &amp; SuiteScript Specialists">
+    <meta name="twitter:description" content="NetSuite implementation, SuiteScript customization, and financial integrations — done right.">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Otticode",
+      "description": "NetSuite Implementation, SuiteScript Development & Payment Integration",
+      "url": "https://otticode.com",
+      "logo": "https://otticode.com/img/otticode-logo.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "areaServed": ["Europe"],
+      "priceRange": "$$"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
@@ -23,7 +55,7 @@
     <script src="https://kit.fontawesome.com/9a275ea748.js" crossorigin="anonymous" defer></script>
 </head>
 
-<body id="page-top">
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-expand-md fixed-top">
@@ -196,15 +228,13 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>Location</h3>
-                    <p>
-                        <strong>Otticode</strong><br>
-                        08002, Barcelona, Spain
-                    </p>
+                    <p class="text-muted">Based in Barcelona, serving clients across Europe and beyond.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>Contact</h3>
+                    <p class="text-muted">Ready to make NetSuite work the way your business does? Let's talk.</p>
                 </div>
             </div>
             <form action="https://formspree.io/f/moqzgkka" class="fs-form fs-margin-bottom" target="_top" method="POST">
@@ -229,6 +259,9 @@
                         <div class="fs-button-group">
                             <button class="fs-button" type="submit">Submit</button>
                         </div>
+                        <p class="fs-description" style="text-align:center;margin-top:12px;">
+                            By submitting this form you agree to our <a href="privacy.html" target="_blank">privacy policy</a>.
+                        </p>
                     </div>
                 </div>
             </form> 

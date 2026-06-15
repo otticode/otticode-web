@@ -2,3 +2,5 @@
 Thumbs.db
 *.log
 deploy.sh
+.playwright-mcp/
+og-temp.*
