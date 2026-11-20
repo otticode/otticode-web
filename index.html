@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Otticode: NetSuite Implementation, SuiteScript Development &amp; Payment Integration specialists. CPA-led technical team delivering custom NetSuite solutions including Stripe, Payhawk, and bank feed integrations from Barcelona.">
+    <meta name="description" content="Otticode: NetSuite implementation, SuiteScript development &amp; payment integration specialists. CPA-led technical team delivering custom NetSuite solutions including Stripe, Payhawk, and bank feed integrations from Barcelona.">
     <meta name="author" content="Otticode">
     <link rel="canonical" href="https://otticode.com">
     <title>Otticode — NetSuite Implementation &amp; SuiteScript Specialists</title>
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dc4218">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#0b0b0c">
+    <meta name="theme-color" content="#f2efe6">
 
     <!-- Social / OG -->
     <meta property="og:title" content="Otticode — NetSuite Implementation &amp; SuiteScript Specialists">
@@ -48,251 +51,168 @@
     }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/formspree.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9a275ea748.js" crossorigin="anonymous" defer></script>
+    <link rel="preload" href="fonts/bricolage-300-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="css/site.css" rel="stylesheet">
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <a href="#main-content" class="skip-link">Skip to content</a>
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-expand-md fixed-top" aria-label="Main navigation">
-        <div class="container">
-            <a class="navbar-brand page-scroll" href="#page-top">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#work">Our Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#company">Company</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">Ōtticode</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#company">Company</a>
+            </nav>
+            <a class="cta-solid" href="#company">Talk to us</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Intro Section -->
-    <main id="main-content">
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="intro-content">
-                        <h1>
-                            <img src="img/otticode-550x157-light.png" alt="Otticode" class="img-fluid d-block mx-auto" width="550" height="157">
-                            <span class="h1-tagline">We make NetSuite work the way your business does.</span>
-                        </h1>
-                        <p class="text-muted">
-                            Implementation, SuiteScript customization, and financial integrations &mdash; done right.
-                        </p>
-                    </div>
-                    <a class="btn btn-oc page-scroll" href="#services">See Our Services</a>
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-set"><em>NetSuite</em><b>·</b><em>SuiteScript</em><b>·</b><em>Stripe</em><b>·</b><em>Payhawk</em><b>·</b><em>Bank feeds</em><b>·</b><em>US GAAP</em><b>·</b><em>IFRS</em><b>·</b><em>Multi-subsidiary</em><b>·</b><em>Data migration</em><b>·</b><em>Barcelona</em><b>·</b></span>
+            <span class="marquee-set"><em>NetSuite</em><b>·</b><em>SuiteScript</em><b>·</b><em>Stripe</em><b>·</b><em>Payhawk</em><b>·</b><em>Bank feeds</em><b>·</b><em>US GAAP</em><b>·</b><em>IFRS</em><b>·</b><em>Multi-subsidiary</em><b>·</b><em>Data migration</em><b>·</b><em>Barcelona</em><b>·</b></span>
+            <span class="marquee-set"><em>NetSuite</em><b>·</b><em>SuiteScript</em><b>·</b><em>Stripe</em><b>·</b><em>Payhawk</em><b>·</b><em>Bank feeds</em><b>·</b><em>US GAAP</em><b>·</b><em>IFRS</em><b>·</b><em>Multi-subsidiary</em><b>·</b><em>Data migration</em><b>·</b><em>Barcelona</em><b>·</b></span>
+            <span class="marquee-set"><em>NetSuite</em><b>·</b><em>SuiteScript</em><b>·</b><em>Stripe</em><b>·</b><em>Payhawk</em><b>·</b><em>Bank feeds</em><b>·</b><em>US GAAP</em><b>·</b><em>IFRS</em><b>·</b><em>Multi-subsidiary</em><b>·</b><em>Data migration</em><b>·</b><em>Barcelona</em><b>·</b></span>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="wrap">
+            <div class="sticker" aria-hidden="true">CPA-led<br>team</div>
+            <div class="sticker sticker--alt" aria-hidden="true">EU &amp; US<br>GAAP</div>
+
+            <p class="eyebrow"><i aria-hidden="true"></i> NetSuite consultancy · Barcelona</p>
+            <h1>We make <span class="hl">NetSuite</span> work the way your business does.</h1>
+            <div class="hero-foot">
+                <p>Implementation, SuiteScript customization and financial integrations — done right, by a CPA-led team that understands the accounting underneath the system.</p>
+                <div class="hero-actions">
+                    <a class="btn-ink" href="#services">See our services</a>
+                    <a class="btn-line" href="#company">Book a call</a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Services</h2>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Service 1: NetSuite Implementation -->
-                <div class="col-md-4">
-                    <div class="service-card animate-on-scroll">
-                        <span class="fa-stack fa-4x" aria-hidden="true">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-building fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>NetSuite Implementation</h3>
-                        <p class="text-muted">
-                            We guide businesses through every stage of NetSuite deployment — from initial configuration and chart of accounts setup to module activation, data migration, and user training. Our accounting expertise spans US GAAP, IFRS, and a wide range of EU and international requirements, ensuring your financial workflows are correctly reflected in NetSuite from day one — wherever your business operates.
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 2: SuiteScript & Customization -->
-                <div class="col-md-4">
-                    <div class="service-card animate-on-scroll">
-                        <span class="fa-stack fa-4x" aria-hidden="true">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>SuiteScript &amp; Customization</h3>
-                        <p class="text-muted">
-                            NetSuite is powerful out of the box, but every business has processes that require a more tailored approach. We design and build custom scripts, automations, and workflows that extend NetSuite to fit how your organization actually operates — improving efficiency, reducing risk, and giving your team tools that feel purpose-built for your business.
-                        </p>
-                    </div>
-                </div>
-                <!-- Service 3: Payment & Financial Integrations -->
-                <div class="col-md-4">
-                    <div class="service-card animate-on-scroll">
-                        <span class="fa-stack fa-4x" aria-hidden="true">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-credit-card fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>Payment &amp; Financial Integrations</h3>
-                        <p class="text-muted">
-                            We connect NetSuite with the financial tools your business relies on. Our integration experience includes Stripe, Payhawk, bank feeds, and other payment platforms — automating reconciliation, transaction syncing, and financial reporting. We handle the technical complexity so your accounting team works with clean, accurate data in real time.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="main">
 
-    <!-- Work Section -->
-    <section id="work" class="work-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Our Work</h2>
+        <!-- Services -->
+        <section class="band" id="services" aria-labelledby="services-heading">
+            <div class="wrap">
+                <div class="band-head">
+                    <h2 id="services-heading">Services</h2>
+                    <span class="band-note">From first config to last integration</span>
                 </div>
-            </div>
-            <div class="row">
-                <!-- 1: Implementations -->
-                <div class="col-md-4">
-                    <div class="work-card animate-on-scroll">
-                        <div class="work-card-header">
-                            <span class="fa-stack fa-3x work-card-icon" aria-hidden="true">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-server fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>NetSuite Implementations &amp; Migrations</h3>
-                        </div>
-                        <p class="text-muted">
-                            We have delivered NetSuite implementations from the ground up and managed migrations from legacy accounting systems. This means translating your business requirements into a properly structured NetSuite environment — chart of accounts, subsidiary structures, accounting periods, and data migration — designed to be accurate and maintainable from the very first day in production.
-                        </p>
-                    </div>
-                </div>
-                <!-- 2: Customization -->
-                <div class="col-md-4">
-                    <div class="work-card animate-on-scroll">
-                        <div class="work-card-header">
-                            <span class="fa-stack fa-3x work-card-icon" aria-hidden="true">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-sitemap fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>Customization &amp; Workflow Automation</h3>
-                        </div>
-                        <p class="text-muted">
-                            We have built custom scripts, workflows, forms, fields, and dashboards for clients across a range of industries. Whether automating multi-step approval processes, tailoring transaction forms to match internal procedures, or surfacing the right data for the right people — we make NetSuite behave the way your team expects it to.
-                        </p>
-                    </div>
-                </div>
-                <!-- 3: Integrations -->
-                <div class="col-md-4">
-                    <div class="work-card animate-on-scroll">
-                        <div class="work-card-header">
-                            <span class="fa-stack fa-3x work-card-icon" aria-hidden="true">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-plug fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <h3>Integrations, Clean-ups &amp; Training</h3>
-                        </div>
-                        <p class="text-muted">
-                            Beyond implementations and customizations, we connect NetSuite with payment platforms, bank feeds, and third-party systems to keep financial data flowing reliably. We also help organizations untangle accumulated technical debt — cleaning up configurations that have drifted over time — and deliver hands-on training so your team gets the most out of the system.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Company Section -->
-    <section id="company" class="company-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Who We Are</h2>
-                    <div class="who-card animate-on-scroll">
-                        <p class="text-muted">
-                            Otticode is a boutique NetSuite consultancy founded by a CFO/CPA and a veteran software engineer. We combine deep financial domain knowledge with technical precision to deliver NetSuite implementations, customizations, and integrations that actually fit how your business works. We work closely with a small number of clients to ensure every engagement gets our full attention.
-                        </p>
-                    </div>
+                <div class="svc-list">
+                    <article class="svc">
+                        <span class="svc-n" aria-hidden="true">01</span>
+                        <h3>NetSuite implementation</h3>
+                        <p>From initial configuration and chart-of-accounts setup to module activation, data migration and training. US GAAP, IFRS and EU requirements reflected in your financial workflows from day one. Recent migrations include moving clients from Legacy Tax to SuiteTax.</p>
+                    </article>
+
+                    <article class="svc">
+                        <span class="svc-n" aria-hidden="true">02</span>
+                        <h3>SuiteScript &amp; customization</h3>
+                        <p>NetSuite is powerful out of the box, but every business has processes that need a tailormade approach. We build custom scripts, automations and workflows that extend the system to how you actually operate.</p>
+                    </article>
+
+                    <article class="svc">
+                        <span class="svc-n" aria-hidden="true">03</span>
+                        <h3>Payment &amp; financial integrations</h3>
+                        <p>Stripe, Payhawk, bank feeds and beyond — automating reconciliation, transaction sync and reporting so your accounting team works with clean, real-time data.</p>
+                    </article>
+
+                    <article class="svc">
+                        <span class="svc-n" aria-hidden="true">04</span>
+                        <h3>Support &amp; training</h3>
+                        <p>NetSuite does not stop needing attention at go-live. We stay on for ongoing support, hands-on training and documentation, so your finance team can run the system confidently — without calling us for every change.</p>
+                    </article>
                 </div>
             </div>
-            <div class="content-card">
-                <div class="container-head">
-                    <h3>Contact</h3>
-                    <p class="text-muted">Ready to make NetSuite work the way your business does? Let's talk.</p>
+        </section>
+
+        <!-- Our work -->
+        <section class="work" id="work" aria-labelledby="work-heading">
+            <div class="wrap">
+                <div class="band-head">
+                    <h2 id="work-heading">Our work</h2>
+                    <span class="band-note">Selected engagements</span>
                 </div>
-                <form action="https://formspree.io/f/moqzgkka" class="fs-form" target="_top" method="POST">
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="hidden" name="_next" value="https://otticode.com/thank-you.html" />
-                            <div class="fs-field">
-                                <label class="fs-label" for="name">Your Name</label>
-                                <input class="fs-input" type="text" id="name" name="name" autocomplete="name" required />
-                            </div>
-                            <div class="fs-field">
-                                <label class="fs-label" for="email">Email</label>
-                                <input class="fs-input" type="email" id="email" name="email" autocomplete="email" required />
-                                <p class="fs-description">
-                                    This will help us respond to your message.
-                                </p>
-                            </div>
-                            <div class="fs-field">
-                                <label class="fs-label" for="message">Message</label>
-                                <textarea class="fs-textarea" id="message" name="message" rows="4" required></textarea>
-                                <p class="fs-description">What would you like to discuss?</p>
-                            </div>
-                            <div class="fs-button-group">
-                                <button class="fs-button" type="submit">Submit</button>
-                            </div>
-                            <p class="fs-description" style="text-align:center;margin-top:12px;">
-                                By submitting this form you agree to our <a href="privacy.html" target="_blank">privacy policy</a>.
-                            </p>
-                        </div>
+                <div class="work-grid">
+                    <article class="work-cell">
+                        <span class="work-n" aria-hidden="true">01</span>
+                        <h3>NetSuite implementations &amp; migrations</h3>
+                        <p>Built from the ground up or migrated from legacy accounting systems — designed to stay accurate and maintainable from the first day in production.</p>
+                    </article>
+                    <article class="work-cell">
+                        <span class="work-n" aria-hidden="true">02</span>
+                        <h3>Customization &amp; workflow automation</h3>
+                        <p>Scripts, workflows, forms, fields and dashboards for clients across industries — approvals, tailored forms, the right data for the right people.</p>
+                    </article>
+                    <article class="work-cell">
+                        <span class="work-n" aria-hidden="true">03</span>
+                        <h3>Integrations &amp; clean-ups</h3>
+                        <p>Payment platforms, bank feeds and third-party systems connected reliably, plus the clean-up work that keeps long-running configurations honest.</p>
+                    </article>
+                </div>
+                <p class="work-note">Every engagement is built to stay accurate after go-live: documented, testable, and handed over with the team trained to run it.</p>
+            </div>
+        </section>
+
+        <!-- Company & contact -->
+        <section class="contact" id="company" aria-labelledby="company-heading">
+            <div class="wrap">
+                <div class="contact-lede">
+                    <h2 id="company-heading">A boutique practice, by design.</h2>
+                    <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine deep financial domain knowledge with technical precision to deliver NetSuite work that genuinely fits how your business operates.</p>
+                    <p>We take on a small number of clients at a time so every engagement gets undivided attention.</p>
+                    <a class="contact-email" href="mailto:hello@otticode.com">hello@otticode.com</a>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/moqzgkka" method="POST">
+                    <h3>Start a conversation</h3>
+                    <p class="form-hint">Tell us what you are trying to fix.</p>
+
+                    <input type="hidden" name="_next" value="https://otticode.com/thank-you.html">
+                    <!-- Formspree honeypot: bots fill it, humans never see it. -->
+                    <div class="visually-hidden" aria-hidden="true">
+                        <label for="_gotcha">Leave this field empty</label>
+                        <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
                     </div>
+
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                    </div>
+
+                    <button class="form-submit" type="submit">Send message</button>
+                    <p class="form-legal">By sending this form you agree to our <a href="privacy.html">privacy policy</a>.</p>
                 </form>
             </div>
-            <div class="content-card">
-                <div class="container-head">
-                    <h3>Location</h3>
-                    <p class="text-muted">Based in Barcelona, serving clients across Europe and beyond.</p>
-                </div>
-                <div class="map-embed">
-                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.14%2C41.36%2C2.20%2C41.40&amp;layer=mapnik&amp;marker=41.384%2C2.1705" title="08002 Barcelona" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
+        </section>
 
-    </section>
     </main>
 
-    <!-- Bootstrap 5 bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Scrolling Nav -->
-    <script src="js/scrolling-nav.js"></script>
-    <!-- Scroll Animations -->
-    <script src="js/animations.js"></script>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <div class="footer-brand">Ōtticode</div>
-            <p class="footer-tagline">NetSuite Implementation &amp; SuiteScript Specialists</p>
-            <p class="footer-copyright">
-                <small>&copy; 2026 Otticode. All rights reserved. &middot; <a href="#page-top">Home</a> &middot; <a href="accessibility.html">Accessibility</a> &middot; <a href="privacy.html">Privacy</a></small>
-            </p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© 2026 Ōtticode</span>
+            <span>Barcelona · Europe</span>
+            <nav aria-label="Footer">
+                <a href="privacy.html">Privacy</a> · <a href="accessibility.html">Accessibility</a> · <a href="index.html">Home</a>
+            </nav>
         </div>
     </footer>
 

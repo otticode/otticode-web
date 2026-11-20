@@ -66,7 +66,7 @@
          id="rect10" /></clipPath><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3448"><rect
-         style="fill: #f4d7d7; opacity: 0.38999999"
+         style="fill:#f2efe6; opacity: 0.38999999"
          id="rect3450"
          width="2693.2"
          height="774.3"
@@ -74,7 +74,7 @@
          y="242.8" /></clipPath><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3452"><rect
-         style="fill: #f4d7d7; opacity: 0.38999999"
+         style="fill:#f2efe6; opacity: 0.38999999"
          id="rect3454"
          width="4260.2"
          height="1215.5"
@@ -220,7 +220,7 @@
                      d="M 801 634 c -2 -10 -4 -19 -7 -28 C 811 730 730 848 605 874 C 476 900 350 817 323 687 C 300 578 356 470 453 423 C 315 463 228 603 258 746 C 289 897 436 993 586 962 C 736 931 832 784 801 634 Z"
                      id="path91"
                      inkscape:connector-curvature="0"
-                     style="fill: #268bd2; stroke: none" /></g></g></g><g
+                     style="fill: #ff4d1c; stroke: none" /></g></g></g><g
                class="com.sun.star.drawing.TextShape"
                id="g93"><g
                  id="id4"><rect
@@ -245,5 +245,5 @@
        y="815"
        id="tspan102"><tspan
          id="tspan104"
-         style="fill:#586e75;stroke:none">Ōtticode</tspan></tspan></tspan></text>
+         style="fill:#0b0b0c;stroke:none">Ōtticode</tspan></tspan></tspan></text>
 </g></g></g></g></g></g></g></svg>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PROTOTYPE — Orange contrast options</title>
+
+<!--
+  PROTOTYPE — THROWAWAY.
+  Question: variant C's orange band + nav button fail WCAG AA with white text (3.32:1).
+  Three fixes side by side. Same copy in each column so only colour is being compared.
+  Open: http://localhost:8099/prototype/contrast-options.html
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#0b0b0c;--paper:#f2efe6}
+*{box-sizing:border-box}
+body{margin:0;background:#e9e6dc;color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;padding:32px 28px 60px}
+.page-head{max-width:1560px;margin:0 auto 26px}
+.page-head .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#57534a;font-weight:700}
+.page-head h1{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;letter-spacing:-.035em;
+  font-size:30px;margin:6px 0 8px}
+.page-head p{margin:0;color:#57534a;font-size:14px;max-width:80ch}
+
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;max-width:1900px;margin:0 auto}
+.col{display:flex;flex-direction:column;gap:12px}
+.col-head{border-top:2px solid var(--ink);padding-top:8px}
+.col-head h2{font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:17px;letter-spacing:-.02em;margin:0 0 3px}
+.col-head .ratio{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.06em;color:#57534a}
+.col-head .ratio b{color:#0b0b0c}
+
+/* the hero word */
+.word{background:var(--acc);color:#fff;font-family:"Bricolage Grotesque",Inter,sans-serif;
+  font-weight:800;font-size:32px;letter-spacing:-.04em;line-height:1;padding:4px 10px;align-self:flex-start}
+.word-note{font-size:11px;color:#57534a;margin:0}
+
+/* the nav button */
+.sample-btn{align-self:flex-start;background:var(--acc);color:var(--fg);border:2px solid var(--ink);
+  font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:11px 18px;
+  box-shadow:4px 4px 0 var(--ink)}
+
+/* the contact band */
+.band{background:var(--acc);color:var(--fg);border:2px solid var(--ink);padding:26px 24px}
+.band h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;letter-spacing:-.03em;
+  font-size:25px;line-height:1.02;margin:0 0 12px}
+.band p{font-size:14.5px;line-height:1.55;margin:0 0 14px}
+.band .mail{display:inline-block;color:var(--fg);text-decoration:none;
+  font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:700;font-size:19px;
+  border-bottom:2px solid var(--fg);padding-bottom:2px;margin-bottom:20px}
+.band label{display:block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.band input{width:100%;background:#fff;border:2px solid var(--ink);color:var(--ink);
+  font:inherit;font-size:13px;padding:9px 10px;margin-bottom:12px}
+.band button{width:100%;background:var(--ink);color:#fff;border:2px solid var(--ink);
+  font:inherit;font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;padding:11px}
+.note{font-size:12.5px;line-height:1.55;color:#57534a;border-left:2px solid #c9c4b6;padding-left:10px}
+.note b{color:#0b0b0c}
+
+/* the three treatments */
+.o-a{--acc:#ff4d1c;--fg:#0b0b0c}
+.o-b{--acc:#d93c0f;--fg:#ffffff}
+.o-c{--acc:#ff4d1c;--fg:#ffffff}
+.o-d{--acc:#d93c0f;--fg:#0b0b0c}
+.o-e{--acc:#dc4218;--fg:#0b0b0c}
+
+@media (max-width:1560px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <span class="kicker">Prototype · variant C · decision 2</span>
+  <h1>Orange contrast — five ways to fix it</h1>
+  <p>Variant C's contact band and nav button set white text on <code>#ff4d1c</code>, which measures 3.32:1 — below the 4.5:1 WCAG AA floor for body text. The giant hero word is fine (large text only needs 3:1). Each column below is the same component in a different treatment.</p>
+</div>
+
+<div class="grid">
+
+  <!-- 2A -->
+  <section class="col o-a">
+    <div class="col-head">
+      <h2>2A — ink on orange</h2>
+      <span class="ratio">ink #0b0b0c on #ff4d1c · <b>5.93:1</b> · brand orange unchanged</span>
+    </div>
+    <span class="word">NetSuite</span>
+    <p class="word-note">Hero block keeps white text (100px, needs only 3:1).</p>
+    <span class="sample-btn">Talk to us</span>
+    <div class="band">
+      <h3>A boutique practice, by design.</h3>
+      <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine financial domain knowledge with technical precision.</p>
+      <a class="mail">hello@otticode.com</a>
+      <label for="a">Your name</label>
+      <input id="a" type="text">
+      <button type="button">Send message</button>
+    </div>
+    <p class="note"><b>Cost:</b> the band reads as a bolder, more graphic block. Orange stays exactly as it is everywhere else.</p>
+  </section>
+
+  <!-- 2B -->
+  <section class="col o-b">
+    <div class="col-head">
+      <h2>2B — darken the orange</h2>
+      <span class="ratio">white on #d93c0f · <b>4.56:1</b> · accent changes everywhere</span>
+    </div>
+    <span class="word">NetSuite</span>
+    <p class="word-note">Hero block, stickers and numerals all shift to #d93c0f.</p>
+    <span class="sample-btn">Talk to us</span>
+    <div class="band">
+      <h3>A boutique practice, by design.</h3>
+      <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine financial domain knowledge with technical precision.</p>
+      <a class="mail">hello@otticode.com</a>
+      <label for="b">Your name</label>
+      <input id="b" type="text">
+      <button type="button">Send message</button>
+    </div>
+    <p class="note"><b>Cost:</b> the whole brand gets a burnt-orange cast; it passes, but only by 0.06.</p>
+  </section>
+
+  <!-- 2C -->
+  <section class="col o-c">
+    <div class="col-head">
+      <h2>2C — keep it as-is</h2>
+      <span class="ratio">white on #ff4d1c · <b>3.32:1</b> · fails AA</span>
+    </div>
+    <span class="word">NetSuite</span>
+    <p class="word-note">No change to anything.</p>
+    <span class="sample-btn">Talk to us</span>
+    <div class="band">
+      <h3>A boutique practice, by design.</h3>
+      <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine financial domain knowledge with technical precision.</p>
+      <a class="mail">hello@otticode.com</a>
+      <label for="c">Your name</label>
+      <input id="c" type="text">
+      <button type="button">Send message</button>
+    </div>
+    <p class="note"><b>Cost:</b> the band and the nav button stay below AA. Everything else on the page is unaffected.</p>
+  </section>
+
+  <!-- 2D -->
+  <section class="col o-d">
+    <div class="col-head">
+      <h2>2D — ink on burnt orange</h2>
+      <span class="ratio">ink #0b0b0c on #d93c0f · <b>4.31:1</b> · fails AA</span>
+    </div>
+    <span class="word">NetSuite</span>
+    <p class="word-note">Hero block, stickers and numerals shift to #d93c0f.</p>
+    <span class="sample-btn">Talk to us</span>
+    <div class="band">
+      <h3>A boutique practice, by design.</h3>
+      <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine financial domain knowledge with technical precision.</p>
+      <a class="mail">hello@otticode.com</a>
+      <label for="d">Your name</label>
+      <input id="d" type="text">
+      <button type="button">Send message</button>
+    </div>
+    <p class="note"><b>Careful:</b> this is the only pairing that loses twice — a duller orange <i>and</i> 4.31:1.</p>
+  </section>
+
+  <!-- 2E -->
+  <section class="col o-e">
+    <div class="col-head">
+      <h2>2E — ink on #dc4218</h2>
+      <span class="ratio">ink #0b0b0c on #dc4218 · <b>4.53:1</b> · passes by 0.03</span>
+    </div>
+    <span class="word">NetSuite</span>
+    <p class="word-note">Hero block, stickers and numerals shift to #dc4218.</p>
+    <span class="sample-btn">Talk to us</span>
+    <div class="band">
+      <h3>A boutique practice, by design.</h3>
+      <p>Ōtticode was founded by a CFO/CPA and a veteran software engineer. We combine financial domain knowledge with technical precision.</p>
+      <a class="mail">hello@otticode.com</a>
+      <label for="e">Your name</label>
+      <input id="e" type="text">
+      <button type="button">Send message</button>
+    </div>
+    <p class="note"><b>Trade-off:</b> the darkest orange that still passes with ink text. Margin is 0.03 — compliant, but one nudge darker and it fails.</p>
+  </section>
+
+</div>
+
+</body>
+</html>
