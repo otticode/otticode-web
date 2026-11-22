@@ -18,7 +18,7 @@ actually want to prove delivery end to end.
 
 ### DigitalOcean App Platform (primary)
 
-App `ottocode-app` builds and deploys automatically on every push to `main`:
+App `otticode-app` builds and deploys automatically on every push to `main`:
 
 - <https://otticode-app-rgosu.ondigitalocean.app>
 

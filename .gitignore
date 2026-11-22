@@ -5,4 +5,3 @@ deploy.sh
 .playwright-mcp/
 _site/
 og-temp.*
-BingSiteAuth.xml
