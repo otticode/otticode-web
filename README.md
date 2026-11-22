@@ -16,10 +16,28 @@ actually want to prove delivery end to end.
 
 ## Deployment
 
+### DigitalOcean App Platform (primary)
+
+App `ottocode-app` builds and deploys automatically on every push to `main`:
+
+- <https://otticode-app-rgosu.ondigitalocean.app>
+
+The app spec runs `bash bin/build-site.sh` and serves `_site/`. App Platform would
+otherwise publish the repo root verbatim, so the build step is what keeps
+`prototype/`, `tests/`, `README.md` and dotfiles off the public site.
+
+To preview exactly what gets published:
+
+```bash
+bash bin/build-site.sh && ls -R _site
+```
+
+### VPS (legacy)
+
 ```bash
 ./deploy.sh
 ```
 
-Configuration lives in `deploy.sh`. It excludes `.git/`, `deploy.sh`, `README.md`,
-`prototype/` and `tests/`, so nothing from the design work or the test harness can
-reach production.
+`deploy.sh` is untracked and lives only on the machine that holds the SSH access.
+It rsyncs to `otticode.com` and carries its own `--exclude` list, kept in sync
+with `bin/build-site.sh`.
